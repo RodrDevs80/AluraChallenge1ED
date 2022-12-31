@@ -1,0 +1,398 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  background: #f3f5fc;
+}
+
+.logo {
+  position: absolute;
+  width: 120px;
+  height: 48px;
+  left: 40px;
+  top: 40px;
+  transition: 2s;
+  animation: animate 3s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotateY(360deg);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+}
+
+.ingText {
+  position: absolute;
+  width: 577px;
+  height: 200px;
+  left: 240px;
+  top: 168px;
+  border: none;
+  outline: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  resize: none;
+  border-radius: 5px;
+  color: #0a3871;
+}
+.ingText::placeholder {
+  color: #0a3871;
+}
+.recta1 {
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  left: 900px;
+  top: 40px;
+  background: #ffffff;
+  box-shadow: 12px 24px 32px -8px rgba(0, 0, 0, 0.3);
+  border-radius: 32px;
+  box-sizing: border-box;
+}
+.muneco {
+  position: absolute;
+  width: 336px;
+  height: 304px;
+  top: 100px;
+}
+.frame5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  left: 40px;
+  top: 400px;
+}
+.recta1 h3 {
+  width: 290px;
+  height: 58px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343a40;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.desencrip {
+  position: relative;
+  width: 290px;
+  height: 58px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  text-align: center;
+  color: #495057;
+}
+.frame5Dos {
+  position: absolute;
+  width: 336px;
+  height: 400px;
+  left: 40px;
+  top: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #495057;
+  visibility: hidden;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  position: absolute;
+  width: 680px;
+  height: 67px;
+  left: 100px;
+  top: 515px;
+}
+.btn .encriptar {
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  background: #0a3871;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.btn .desencriptar {
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.btnLimpiar {
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  border: none;
+  background-color: #f3f5fc;
+  font-size: 25px;
+  cursor: pointer;
+  top: 67px;
+  left: -351px;
+  position: relative;
+}
+.excla {
+  width: 205px;
+  height: 18px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #495057;
+  opacity: 0.8;
+  display: inline;
+  position: absolute;
+  left: 110px;
+  top: 480px;
+}
+.contenedor-btn-copiar {
+  position: absolute;
+  width: 340px;
+  height: 67px;
+  left: 34px;
+  top: 475px;
+  visibility: hidden;
+}
+.btn-copiar {
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.ocultar {
+  display: none;
+}
+
+.oscuro {
+  background: black;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 768px;
+    height: 1174px;
+  }
+  .logo {
+    width: 70px;
+    height: 40px;
+    left: 40px;
+    top: 73.42px;
+    animation: none;
+  }
+  .ingText {
+    width: 688px;
+    height: 400px;
+    left: 40px;
+    top: 240px;
+  }
+  .btn {
+    width: 688px;
+    height: 67px;
+    left: 40px;
+    top: 870px;
+  }
+  .btn .encriptar {
+    padding: 24px;
+    width: 332px;
+    height: 67px;
+    flex: none;
+  }
+  .btn .desencriptar {
+    width: 332px;
+    height: 67px;
+    flex: none;
+  }
+  .btnLimpiar {
+    position: relative;
+    left: -387px;
+    top: 70px;
+  }
+  .excla {
+    width: 229px;
+    height: 18px;
+    left: 40px;
+    top: 836px;
+  }
+  .recta1 {
+    width: 688px;
+    height: 133px;
+    /*height: 343px;*/
+    left: 40px;
+    top: 1001px;
+  }
+  .muneco {
+    display: none;
+  }
+  .frame5 {
+    top: 10px;
+  }
+  .frame5 h3 {
+    width: 624px;
+    height: 29px;
+    color: #343a40;
+  }
+  .desencrip {
+    top: -41px;
+    width: 624px;
+    height: 24px;
+  }
+  .frame5Dos {
+    width: 624px;
+    height: 67px;
+  }
+  .contenedor-btn-copiar {
+    position: absolute;
+    width: 624px;
+    height: 67px;
+  }
+  .btn-copiar {
+    position: relative;
+    width: 624px;
+    height: 67px;
+    top: -210px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .container {
+    width: auto;
+    height: 933px;
+    /*height: 1715px;*/
+  }
+  .logo {
+    width: 50px;
+    height: 30px;
+    left: 10px;
+    top: 23.97px;
+  }
+  .ingText {
+    width: 343px;
+    height: 400px;
+   /* height: 624px;*/
+    left: 3px;
+    top: 152px;
+    
+  }
+  .excla {
+    position: relative;
+    left: 10px;
+    /*top: 840px;*/
+    top: -7px;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 343px;
+    height: 158px;
+    left: 3px;
+    top: 485px;
+    /*top: 874px;*/
+  }
+  .btn .encriptar {
+    width: 343px;
+    height: 67px;
+  }
+  .btn .desencriptar {
+    width: 342px;
+    height: 67px;
+  }
+  .btnLimpiar {
+    left: 142px;
+    top: -7px;
+  }
+  .recta1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+
+    position: absolute;
+    width: 327px;
+   /* width: 343px;*/
+   height: 186px;
+    /*height: 595px;*/
+    left: 10px;
+    top: 707px;
+    /*top: 1096px;*/
+    border-radius: 32px;
+  }
+  .muneco {
+    display: none;
+  }
+  .frame5 {
+    top: 10px;
+    /*visibility: visible;*/
+  }
+
+  .frame5 h3 {
+    width: 263px;
+    height: 58px;
+    color: #343a40;
+  }
+  .desencrip {
+    top: -37px;
+    width: 263px;
+    height: 48px;
+  }
+  .frame5Dos {
+    width: 279px;
+    height: 432px;
+    /* display: none;*/
+  }
+  .contenedor-btn-copiar {
+    width: 279px;
+    height: 67px;
+    /* display: none;*/
+  }
+  .btn-copiar {
+    position: relative;
+    width: 279px;
+    height: 67px;
+    top: 20px;
+  }
+}
