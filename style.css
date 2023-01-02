@@ -3,7 +3,7 @@ body {
   box-sizing: border-box;
   padding: 0;
 }
-#particles-js{
+#particles-js {
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -55,6 +55,7 @@ body {
   resize: none;
   border-radius: 5px;
   color: #0a3871;
+  background: #f3f5fc;
 }
 .ingText::placeholder {
   color: #0a3871;
@@ -168,12 +169,12 @@ body {
   height: 50px;
   text-decoration: none;
   border: none;
-  background-color: #f3f5fc;
   font-size: 25px;
   cursor: pointer;
   top: 67px;
   left: -351px;
   position: relative;
+  background: #f3f5fc;
 }
 .excla {
   width: 205px;
@@ -302,20 +303,19 @@ body {
   .logo {
     width: 50px;
     height: 30px;
-    left: 10px;
+    left: 55px; /*se cambio*/
     top: 23.97px;
   }
   .ingText {
     width: 343px;
     height: 400px;
-   /* height: 624px;*/
-    left: 3px;
+    /* height: 624px;*/
+    left: 71px; /*se cambio*/
     top: 152px;
-    
   }
   .excla {
     position: relative;
-    left: 10px;
+    left: 42px; /*se cambio*/
     /*top: 840px;*/
     top: -7px;
   }
@@ -326,7 +326,7 @@ body {
     gap: 24px;
     width: 343px;
     height: 158px;
-    left: 3px;
+    left: 37px; /*se cambio*/
     top: 485px;
     /*top: 874px;*/
   }
@@ -351,10 +351,10 @@ body {
 
     position: absolute;
     width: 327px;
-   /* width: 343px;*/
-   height: 186px;
+    /* width: 343px;*/
+    height: 186px;
     /*height: 595px;*/
-    left: 10px;
+    left: 47px; /*se cambio*/
     top: 707px;
     /*top: 1096px;*/
     border-radius: 32px;
@@ -392,5 +392,26 @@ body {
     width: 279px;
     height: 67px;
     top: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .logo {
+    left: 10px;
+  }
+  .ingText {
+    left: 3px;
+  }
+  .excla {
+    left: 10px;
+  }
+  .btn {
+    left: 3px;
+  }
+
+  .recta1 {
+    left: 10px;
+  }
+  .muneco {
+    display: none;
   }
 }
