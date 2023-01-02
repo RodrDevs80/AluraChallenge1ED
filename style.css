@@ -293,7 +293,7 @@ body {
     top: -210px;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 415px) {
   .container {
     width: auto;
     height: 933px;
